@@ -3,128 +3,119 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\dredhorse5\Documents\Учеба\Цуимп\Lab_USART\lab2.uvproj
-Project File Date:  04/24/2022
+C:\Users\varha\OneDrive\Рабочий стол\Study\6semestr\ЦУИМ\Ukeil\Lab_5\lab2.uvproj
+Project File Date:  04/26/2022
 
 <h2>Output:</h2>
 Build target 'Target 1'
-compiling Main.c...
-Main\ledinit.h(4): warning:  #1-D: last line of file ends without a newline
-                void UartInit(void);
-Main\Usart.h(3): warning:  #1-D: last line of file ends without a newline
-  void SendString_to_USART (const char *str);
-Main\Main.c(16): warning:  #1-D: last line of file ends without a newline
-  }
-Main\Main.c: 3 warnings, 0 errors
 compiling Usart.c...
 Main\Main.h(21): warning:  #1-D: last line of file ends without a newline
                 
-Main\Usart.c(33): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Usart.c(40): warning:  #174-D: expression has no effect
+        for(j; j < main_length; j++)
+Main\Usart.c(58): warning:  #940-D: missing return statement at end of non-void function "IsIncludeString"
+  }
+Main\Usart.c(62): warning:  #186-D: pointless comparison of unsigned integer with zero
         if(LedTimer1 > 0 && LedState1 >= 0)
-Main\Usart.c(48): warning:  #69-D: integer conversion resulted in truncation
-                        LedTimer1 = 500;
-Main\Usart.c(54): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Usart.c(83): warning:  #186-D: pointless comparison of unsigned integer with zero
         if(LedTimer2 > 0 && LedState2 >= 0)
-Main\Usart.c(69): warning:  #69-D: integer conversion resulted in truncation
-                        LedTimer2 = 500;
-Main\Usart.c(75): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Usart.c(104): warning:  #186-D: pointless comparison of unsigned integer with zero
         if(LedTimer3 > 0 && LedState3 >= 0)
-Main\Usart.c(90): warning:  #69-D: integer conversion resulted in truncation
-                        LedTimer3 = 500;
-Main\Usart.c(96): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Usart.c(125): warning:  #186-D: pointless comparison of unsigned integer with zero
         if(LedTimer4 > 0 && LedState4 >= 0)
-Main\Usart.c(111): warning:  #69-D: integer conversion resulted in truncation
-                        LedTimer4 = 500;
-Main\Usart.c(186): warning:  #111-D: statement is unreachable
+Main\Usart.c(215): warning:  #111-D: statement is unreachable
       case 0  : return('0'); break;
-Main\Usart.c(187): warning:  #111-D: statement is unreachable
+Main\Usart.c(216): warning:  #111-D: statement is unreachable
       case 1  : return('1'); break;
-Main\Usart.c(188): warning:  #111-D: statement is unreachable
+Main\Usart.c(217): warning:  #111-D: statement is unreachable
       case 2  : return('2'); break;
-Main\Usart.c(189): warning:  #111-D: statement is unreachable
+Main\Usart.c(218): warning:  #111-D: statement is unreachable
       case 3  : return('3'); break;
-Main\Usart.c(190): warning:  #111-D: statement is unreachable
+Main\Usart.c(219): warning:  #111-D: statement is unreachable
       case 4  : return('4'); break;
-Main\Usart.c(191): warning:  #111-D: statement is unreachable
+Main\Usart.c(220): warning:  #111-D: statement is unreachable
       case 5  : return('5'); break;
-Main\Usart.c(192): warning:  #111-D: statement is unreachable
+Main\Usart.c(221): warning:  #111-D: statement is unreachable
       case 6  : return('6'); break;
-Main\Usart.c(193): warning:  #111-D: statement is unreachable
+Main\Usart.c(222): warning:  #111-D: statement is unreachable
       case 7  : return('7'); break;
-Main\Usart.c(194): warning:  #111-D: statement is unreachable
+Main\Usart.c(223): warning:  #111-D: statement is unreachable
       case 8  : return('8'); break;
-Main\Usart.c(195): warning:  #111-D: statement is unreachable
+Main\Usart.c(224): warning:  #111-D: statement is unreachable
       case 9  : return('9'); break;
-Main\Usart.c(196): warning:  #111-D: statement is unreachable
+Main\Usart.c(225): warning:  #111-D: statement is unreachable
       case 10 : return('A'); break;
-Main\Usart.c(197): warning:  #111-D: statement is unreachable
+Main\Usart.c(226): warning:  #111-D: statement is unreachable
       case 11 : return('B'); break;
-Main\Usart.c(198): warning:  #111-D: statement is unreachable
+Main\Usart.c(227): warning:  #111-D: statement is unreachable
       case 12 : return('C'); break;
-Main\Usart.c(199): warning:  #111-D: statement is unreachable
+Main\Usart.c(228): warning:  #111-D: statement is unreachable
       case 13 : return('D'); break;
-Main\Usart.c(200): warning:  #111-D: statement is unreachable
+Main\Usart.c(229): warning:  #111-D: statement is unreachable
       case 14 : return('E'); break;
-Main\Usart.c(201): warning:  #111-D: statement is unreachable
+Main\Usart.c(230): warning:  #111-D: statement is unreachable
       case 15 : return('F'); break;
-Main\Usart.c(228): warning:  #223-D: function "strcmp" declared implicitly
-        if(strcmp(uart2_rx_buf, "LedBlink delay"))
-Main\Usart.c(242): warning:  #223-D: function "atoi" declared implicitly
+Main\Usart.c(257): warning:  #223-D: function "strcmp" declared implicitly
+        if(strcmp(uart2_rx_buf, "LedBlink delay") == 0)
+Main\Usart.c(274): warning:  #223-D: function "atoi" declared implicitly
                         delay = atoi(delay_char);
-Main\Usart.c(247): warning:  #174-D: expression has no effect
+Main\Usart.c(279): warning:  #174-D: expression has no effect
                                 for(j; j < i + 2 + 32; j++)
-Main\Usart.c(249): warning:  #223-D: function "SwitchBlinkDelay" declared implicitly
-                                        SwitchBlinkDelay(uart2_rx_buf[j], delay);
-Main\Usart.c(262): warning:  #174-D: expression has no effect
+Main\Usart.c(294): warning:  #174-D: expression has no effect
                                 for(j; j < 19 + 16; j++)
-Main\Usart.c(274): warning:  #174-D: expression has no effect
+Main\Usart.c(306): warning:  #174-D: expression has no effect
                                 for(j; j < 20 + 16; j++)
-Main\Usart.c(289): warning:  #174-D: expression has no effect
+Main\Usart.c(321): warning:  #174-D: expression has no effect
                         for(j; j < 8 + 3; j++)
-Main\Usart.c(293): warning:  #223-D: function "atoi" declared implicitly
+Main\Usart.c(325): warning:  #223-D: function "atoi" declared implicitly
                         num = atoi(num_char);
-Main\Usart.c(307): warning:  #223-D: function "memset" declared implicitly
+Main\Usart.c(339): warning:  #223-D: function "memset" declared implicitly
         memset(uart2_rx_buf, 0, sizeof(uart2_rx_buf)); //Очищаем буфер
-Main\Usart.c: 34 warnings, 0 errors
+Main\Usart.c: 31 warnings, 0 errors
 linking...
-.\lab2.axf: Error: L6218E: Undefined symbol SwitchBlinkDelay (referred from usart.o).
-Not enough information to list image symbols.
-Finished: 1 information, 0 warning and 1 error messages.
+Program Size: Code=6568 RO-data=704 RW-data=96 ZI-data=1760  
+".\lab2.axf" - 0 Error(s), 31 Warning(s).
+Load "C:\\Users\\varha\\OneDrive\\Рабочий стол\\Study\\6semestr\\ЦУИМ\\Ukeil\\Lab_5\\lab2.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+                         for(j; j < 19 + 16; j++)
+Main\Usart.c(306): warning:  #174-D: expression has no effect
+                                for(j; j < 20 + 16; j++)
+Main\Usart.c(321): warning:  #174-D: expression has no effect
+                        for(j; j < 8 + 3; j++)
+Main\Usart.c(325): warning:  #223-D: function "atoi" declared implicitly
+                        num = atoi(num_char);
+Main\Usart.c(339): warning:  #223-D: function "memset" declared implicitly
+        memset(uart2_rx_buf, 0, sizeof(uart2_rx_buf)); //Очищаем буфер
+Main\Usart.c: 31 warnings, 1 error
 ".\lab2.axf" - 1 Error(s), 37 Warning(s).
 Target not created
-</pre>
-</body>
-</html>
-:  #174-D: expression has no effect
-                                for(j; j < i + 2 + 32; j++)
-Main\Usart.c(163): warning:  #223-D: function "SwitchBlinkDelay" declared implicitly
-                                        SwitchBlinkDelay(uart2_rx_buf[j], delay);
-Main\Usart.c(176): warning:  #174-D: expression has no effect
+                     num = atoi(num_char);
+Main\Usart.c(336): warning:  #223-D: function "memset" declared implicitly
+        memset(uart2_rx_buf, 0, sizeof(uart2_rx_buf)); //Очищаем буфер
+Main\Usart.c: 33 warnings, 1 error
+".\lab2.axf" - 1 Error(s), 39 Warning(s).
+Target not created
+ for(j; j < i + 2 + 32; j++)
+Main\Usart.c(291): warning:  #174-D: expression has no effect
                                 for(j; j < 19 + 16; j++)
-Main\Usart.c(188): warning:  #174-D: expression has no effect
+Main\Usart.c(303): warning:  #174-D: expression has no effect
                                 for(j; j < 20 + 16; j++)
-Main\Usart.c(203): warning:  #174-D: expression has no effect
+Main\Usart.c(318): warning:  #174-D: expression has no effect
                         for(j; j < 8 + 3; j++)
-Main\Usart.c(207): warning:  #223-D: function "atoi" declared implicitly
+Main\Usart.c(322): warning:  #223-D: function "atoi" declared implicitly
                         num = atoi(num_char);
-Main\Usart.c(221): warning:  #223-D: function "memset" declared implicitly
+Main\Usart.c(336): warning:  #223-D: function "memset" declared implicitly
         memset(uart2_rx_buf, 0, sizeof(uart2_rx_buf)); //Очищаем буфер
-Main\Usart.c: 25 warnings, 0 errors
-".\lab2.axf" - 12 Error(s), 36 Warning(s).
+Main\Usart.c: 33 warnings, 1 error
+".\lab2.axf" - 6 Error(s), 39 Warning(s).
 Target not created
-main.o).
-.\lab2.axf: Error: L6200E: Symbol main multiply defined (by usart.o and main.o).
-Not enough information to list image symbols.
-Not enough information to list the image map.
-Finished: 2 information, 0 warning and 16 error messages.
-".\lab2.axf" - 16 Error(s), 37 Warning(s).
-Target not created
-n has no effect
-                        for(j; j < 8 + 3; j++)
-Main\Usart.c(207): warning:  #223-D: function "atoi" declared implicitly
-                        num = atoi(num_char);
-Main\Usart.c(221): warning:  #223-D: function "memset" declared implicitly
-        memset(uart2_rx_buf, 0, sizeof(uart2_rx_buf)); //Очищаем буфер
-Main\Usart.c: 26 warnings, 8 errors
-".\lab2.axf" - 8 Error(s), 46 Warning(s).
-Target not created
+Load "C:\\Users\\varha\\OneDrive\\Рабочий стол\\Study\\6semestr\\ЦУИМ\\Ukeil\\Lab_5\\lab2.axf" 
+_____^
+*** error 56: cannot open file
+Error: Flash Download failed  -  Could not load file 'C:\Users\varha\OneDrive\Рабочий стол\Study\6semestr\ЦУИМ\Ukeil\Lab_5\lab2.axf'
+Load "C:\\Users\\varha\\OneDrive\\Рабочий стол\\Study\\6semestr\\ЦУИМ\\Ukeil\\Lab_5\\lab2.axf" 
+_____^
+*** error 56: cannot open file
+Error: Flash Download failed  -  Could not load file 'C:\Users\varha\OneDrive\Рабочий стол\Study\6semestr\ЦУИМ\Ukeil\Lab_5\lab2.axf'

@@ -17,16 +17,45 @@ uint8_t CommandType = 0; // see below
 
 int LedTimer1 = 0;
 uint8_t LedState1 = 0;
-int LedTimerDuration1 = 0;
+int LedTimerDuration1 = 200;
 int LedTimer2 = 0;
 uint8_t LedState2 = 0;
-int LedTimerDuration2 = 0;
+int LedTimerDuration2 = 200;
 int LedTimer3 = 0;
 uint8_t LedState3 = 0;
-int LedTimerDuration3 = 0;
+int LedTimerDuration3 = 200;
 int LedTimer4 = 0;
 uint8_t LedState4 = 0;
-int LedTimerDuration4 = 0;
+int LedTimerDuration4 = 200;
+
+uint8_t IsIncludeString(char * mainString, char * example, uint8_t main_length, uint8_t example_length)
+{
+	uint8_t isGetIn = 0;
+	uint8_t j = 0;
+	uint8_t i = 0;
+	
+	main_length--;
+	example_length--;
+	
+	for(j; j < main_length; j++)
+	{
+		if(isGetIn)
+		{
+			i++;
+			if( i >= example_length)
+				break;
+			if(mainString[j] != example[i])
+				return 0;
+		}
+		
+		if(mainString[j] == example[0])
+		{
+			isGetIn = 1;
+		}
+	}
+	if(isGetIn == 1)
+		return 1;
+}
 
 void SysTick_Handler(void)
 {
@@ -225,19 +254,22 @@ void MyIntToHex(int Num)
 uint8_t CheckCommand()
 {
 	
-	if(strcmp(uart2_rx_buf, "LedBlink delay"))
+	if(strcmp(uart2_rx_buf, "LedBlink delay") == 0)
 	{
 		if(uart2_rx_buf[15] == '{')
 		{
 			char delay_char[16];
 			int delay = 0;
 			uint8_t i = 16;
-
+			
+			for(i = 0 ; i < 16; i++)
+				delay_char[i] = 0x00;
+			
 			for(i = 16 ; i < 38; i++)
 			{
 				if(uart2_rx_buf[i] == '}')
 					break;
-				delay_char[i] = uart2_rx_buf[i];
+				delay_char[i - 16] = uart2_rx_buf[i];
 			}
 			delay = atoi(delay_char);
 
@@ -246,15 +278,15 @@ uint8_t CheckCommand()
 				int j = i + 2 + 1;
 				for(j; j < i + 2 + 32; j++)
 				{
-					SwitchBlinkDelay(uart2_rx_buf[j], delay);
+					SetBlinkDelay(uart2_rx_buf[j], delay);
 				}
 				return 1; // successful
 			}
 		}
 	}
-	else if(strcmp(uart2_rx_buf, "LedBlink switch"))
+	else if(strcmp(uart2_rx_buf, "LedBlink switch") == 1)
 	{
-		if(strcmp(uart2_rx_buf, "LedBlink switch on"))
+		if(strcmp(uart2_rx_buf, "LedBlink switch on") == 1)
 		{
 			if(uart2_rx_buf[19] == '[')
 			{
@@ -266,7 +298,7 @@ uint8_t CheckCommand()
 				return 1; // successful
 			}
 		}
-		else if(strcmp(uart2_rx_buf, "LedBlink switch off"))
+		else if(strcmp(uart2_rx_buf, "LedBlink switch off") == 1)
 		{
 			if(uart2_rx_buf[20] == '[')
 			{
@@ -279,7 +311,7 @@ uint8_t CheckCommand()
 			}
 		}
 	}
-	else if(strcmp(uart2_rx_buf, "Ten2Six"))
+	else if(strcmp(uart2_rx_buf, "Ten2Six") == 1)
 	{
 		if(uart2_rx_buf[8] == '{')
 		{
