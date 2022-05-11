@@ -5,9 +5,11 @@ char uart2_rx_buf[128]; //Буфер для приёма сообщения.
 uint8_t uart2_rx_bit; //Номер байта UART принимаемого в буфер.
 uint8_t isReadCommand; // true if a symbol "/" was seen from uart. allow to read a commands
 uint8_t CommandType = 0; // see below
+char ID[7]  = {'A','M','O','N','G','U','S'};
 
 
 // ===== commands =====
+// 1 - /ID;   // returns device's ID
 // 2 - /LedBlink delay  {100-infinity} [1-4,1-4,1-4,...];   // allow to set to leds by numbers n(1-4) blink delay - from 100 to infinity
 // 5 - /LedBlink switch		off/on	   [1-4,1-4,1-4,...];   // allow to set to leds by numbers n(1-4) state - on or off
 // 8 - /Ten2Six {0-255}; // returns number of decimal system in hexadecimal system
@@ -55,6 +57,7 @@ uint8_t IsIncludeString(char * mainString, char * example, uint8_t main_length, 
 	}
 	if(isGetIn == 1)
 		return 1;
+	return 0;
 }
 
 void SysTick_Handler(void)
@@ -162,6 +165,9 @@ void send_str(char * string)
 }
 void SetBlinkDelay(char led, int delay)
 {
+	if(delay < 100)
+		return;
+
 	switch(led)
 	{
 		case '1':
@@ -233,17 +239,17 @@ char DigitToHex(int N)
 }
 void MyIntToHex(int Num)
 {
-  char Res[5] = "?";
+  char Res[5] = "";
   int N = Num;
-  int i = 1;
   int X;
+  int i = 0;
   while (N > 0)
   {
-    i++;
     X = N % 16;
     N = N / 16;
     if (X < 16) 
-			Res[i] = DigitToHex(X);
+			Res[4 - i] = DigitToHex(X);
+    i++;
   }
 
   send_str(Res);
@@ -253,8 +259,12 @@ void MyIntToHex(int Num)
 // call when the command has completed
 uint8_t CheckCommand()
 {
-	
-	if(strcmp(uart2_rx_buf, "LedBlink delay") == 0)
+	if(IsIncludeString(uart2_rx_buf, "ID",sizeof(uart2_rx_buf)/sizeof(char), sizeof("ID")/sizeof(char)) == 0)
+	{
+		send_str(ID);
+		return 1; // successful
+	}
+	else if(IsIncludeString(uart2_rx_buf, "LedBlink delay",sizeof(uart2_rx_buf)/sizeof(char), sizeof("LedBlink delay")/sizeof(char)) == 0)
 	{
 		if(uart2_rx_buf[15] == '{')
 		{
@@ -284,9 +294,9 @@ uint8_t CheckCommand()
 			}
 		}
 	}
-	else if(strcmp(uart2_rx_buf, "LedBlink switch") == 1)
+	else if(IsIncludeString(uart2_rx_buf, "LedBlink switch",sizeof(uart2_rx_buf)/sizeof(char), sizeof("LedBlink switch")/sizeof(char)) == 1)
 	{
-		if(strcmp(uart2_rx_buf, "LedBlink switch on") == 1)
+		if(IsIncludeString(uart2_rx_buf, "LedBlink switch on",sizeof(uart2_rx_buf)/sizeof(char), sizeof("LedBlink switch on")/sizeof(char)) == 1)
 		{
 			if(uart2_rx_buf[19] == '[')
 			{
@@ -298,7 +308,7 @@ uint8_t CheckCommand()
 				return 1; // successful
 			}
 		}
-		else if(strcmp(uart2_rx_buf, "LedBlink switch off") == 1)
+		else if(IsIncludeString(uart2_rx_buf, "LedBlink switch off",sizeof(uart2_rx_buf)/sizeof(char), sizeof("LedBlink switch off")/sizeof(char)) == 1)
 		{
 			if(uart2_rx_buf[20] == '[')
 			{
@@ -311,7 +321,7 @@ uint8_t CheckCommand()
 			}
 		}
 	}
-	else if(strcmp(uart2_rx_buf, "Ten2Six") == 1)
+	else if(IsIncludeString(uart2_rx_buf, "Ten2Six",sizeof(uart2_rx_buf)/sizeof(char), sizeof("Ten2Six")/sizeof(char)) == 1)
 	{
 		if(uart2_rx_buf[8] == '{')
 		{
@@ -348,6 +358,7 @@ void WriteBuffer()
 	if(uart_data == '/')
 	{
 		isReadCommand = 1;
+		ClearBuffet(); // NEW
 	}
 	else if(isReadCommand == 1)
 	{
