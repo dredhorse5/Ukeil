@@ -425,6 +425,11 @@
               <FileType>1</FileType>
               <FilePath>.\Main\ledinit.c</FilePath>
             </File>
+            <File>
+              <FileName>Usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Main\Usart.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
