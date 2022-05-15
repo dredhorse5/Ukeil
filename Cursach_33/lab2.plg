@@ -1,0 +1,120 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+Z:\3_course\4931101_90102\Titiov\CUIMP\Cursach_33\lab2.uvproj
+Project File Date:  04/05/2022
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(78): error:  #29: expected an expression
+Main\Main.c(80): error:  #29: expected an expression
+Main\Main.c(90): error:  #20: identifier "Mode" is undefined
+Main\Main.c(134): error:  #29: expected an expression
+compiling init.c...
+Main\init.c(27): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(80): error:  #29: expected an expression
+Main\Main.c(90): error:  #20: identifier "Mode" is undefined
+Main\Main.c(134): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(21): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(23): error:  #65: expected a ";"
+Main\Main.c(81): error:  #20: identifier "LedMode" is undefined
+Main\Main.c(90): error:  #20: identifier "Mode" is undefined
+Target not created
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(21): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(90): error:  #20: identifier "Mode" is undefined
+Target not created
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(21): warning:  #69-D: integer conversion resulted in truncation
+linking...
+Program Size: Code=3500 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 2 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_33\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(21): warning:  #69-D: integer conversion resulted in truncation
+linking...
+Program Size: Code=3500 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 2 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_33\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(21): warning:  #69-D: integer conversion resulted in truncation
+linking...
+Program Size: Code=3500 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(21): warning:  #69-D: integer conversion resulted in truncation
+linking...
+Program Size: Code=3500 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 2 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_33\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=3500 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 1 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_33\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=3500 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 1 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_33\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=3508 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 1 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_33\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=3508 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 1 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_33\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.

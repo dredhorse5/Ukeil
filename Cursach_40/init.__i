@@ -1,0 +1,5 @@
+-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\CMSIS\Device\ST\STM32F4xx -I.\CMSIS\Device\ST\STM32F4xx\Include -I.\CMSIS\Device\ST\STM32F4xx\Source -I.\SysTick -I.\STM32F4xx_StdPeriph_Driver\inc -I.\STM32F4xx_StdPeriph_Driver\src -I.\STM32F4xx_StdPeriph_Driver -I.\Main 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F4xx 
+-o "init.o" --omf_browse "init.crf" --depend "init.d" "Main\init.c"

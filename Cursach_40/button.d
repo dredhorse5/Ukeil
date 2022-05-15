@@ -1,0 +1,13 @@
+button.o: Main\Button.c
+button.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+button.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+button.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+button.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+button.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+button.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+button.o: .\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+button.o: .\STM32F4xx_StdPeriph_Driver\stm32f4xx_conf.h
+button.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+button.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+button.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+button.o: .\STM32F4xx_StdPeriph_Driver\inc\misc.h

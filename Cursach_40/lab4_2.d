@@ -1,0 +1,13 @@
+.\lab4_2.o: Main\lab4_2.c
+.\lab4_2.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\lab4_2.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+.\lab4_2.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\lab4_2.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\lab4_2.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\lab4_2.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+.\lab4_2.o: .\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\lab4_2.o: .\STM32F4xx_StdPeriph_Driver\stm32f4xx_conf.h
+.\lab4_2.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\lab4_2.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\lab4_2.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\lab4_2.o: .\STM32F4xx_StdPeriph_Driver\inc\misc.h
