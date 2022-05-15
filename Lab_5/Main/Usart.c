@@ -18,16 +18,16 @@ char ID[7]  = {'A','M','O','N','G','U','S'};
 
 
 int LedTimer1 = 0;
-uint8_t LedState1 = 0;
+int8_t LedState1 = 0;
 int LedTimerDuration1 = 200;
 int LedTimer2 = 0;
-uint8_t LedState2 = 0;
+int8_t LedState2 = 0;
 int LedTimerDuration2 = 200;
 int LedTimer3 = 0;
-uint8_t LedState3 = 0;
+int8_t LedState3 = 0;
 int LedTimerDuration3 = 200;
 int LedTimer4 = 0;
-uint8_t LedState4 = 0;
+int8_t LedState4 = 0;
 int LedTimerDuration4 = 200;
 
 uint8_t IsIncludeString(char * mainString, char * example, uint8_t main_length, uint8_t example_length)
@@ -62,7 +62,9 @@ uint8_t IsIncludeString(char * mainString, char * example, uint8_t main_length, 
 
 void SysTick_Handler(void)
 {
-	if(LedTimer1 > 0 && LedState1 >= 0)
+	if(LedState1 >= 0)
+	{
+	if(LedTimer1 > 0)
 	{
 		LedTimer1--;
 	}
@@ -81,9 +83,11 @@ void SysTick_Handler(void)
 			Green_off();
 		}
 	}
-
+}
 	
-	if(LedTimer2 > 0 && LedState2 >= 0)
+	if(LedState2 >= 0)
+	{
+	if(LedTimer2 > 0)
 	{
 		LedTimer2--;
 	}
@@ -102,9 +106,11 @@ void SysTick_Handler(void)
 			Orange_off();
 		}
 	}
-
+}
 	
-	if(LedTimer3 > 0 && LedState3 >= 0)
+	if(LedState3 >= 0)
+	{
+	if(LedTimer3 > 0)
 	{
 		LedTimer3--;
 	}
@@ -123,9 +129,13 @@ void SysTick_Handler(void)
 			Red_off();
 		}
 	}
-
+}
 	
-	if(LedTimer4 > 0 && LedState4 >= 0)
+	
+	
+	if(LedState4 >= 0)
+	{
+	if(LedTimer4 > 0 )
 	{
 		LedTimer4--;
 	}
@@ -143,6 +153,7 @@ void SysTick_Handler(void)
 			LedTimer4 = 500;
 			Blue_off();
 		}
+	}
 	}
 }
 
@@ -239,7 +250,7 @@ char DigitToHex(int N)
 }
 void MyIntToHex(int Num)
 {
-  char Res[5] = "";
+  char Res[5] = {' ',' ',' ',' ',' '};
   int N = Num;
   int X;
   int i = 0;
@@ -251,7 +262,6 @@ void MyIntToHex(int Num)
 			Res[4 - i] = DigitToHex(X);
     i++;
   }
-
   send_str(Res);
   //for (int j = i; j <= 4; j++) Res[j] = '0'; ??
 }  
@@ -259,12 +269,12 @@ void MyIntToHex(int Num)
 // call when the command has completed
 uint8_t CheckCommand()
 {
-	if(IsIncludeString(uart2_rx_buf, "ID",sizeof(uart2_rx_buf)/sizeof(char), sizeof("ID")/sizeof(char)) == 0)
+	if(IsIncludeString(uart2_rx_buf, "ID",sizeof(uart2_rx_buf)/sizeof(char), sizeof("ID")/sizeof(char)) == 1)
 	{
 		send_str(ID);
 		return 1; // successful
 	}
-	else if(IsIncludeString(uart2_rx_buf, "LedBlink delay",sizeof(uart2_rx_buf)/sizeof(char), sizeof("LedBlink delay")/sizeof(char)) == 0)
+	else if(IsIncludeString(uart2_rx_buf, "LedBlink delay",sizeof(uart2_rx_buf)/sizeof(char), sizeof("LedBlink delay")/sizeof(char)) == 1)
 	{
 		if(uart2_rx_buf[15] == '{')
 		{
@@ -328,7 +338,7 @@ uint8_t CheckCommand()
 			char num_char[3];
 			uint8_t num = 0;
 			int j = 8 + 1;
-			for(j; j < 8 + 3; j++)
+			for(j; j < 8 + 4; j++)
 			{
 				num_char[j - 9] = uart2_rx_buf[j];
 			}

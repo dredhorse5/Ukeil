@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\lab2.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\lab2.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Wed May 11 03:21:29 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Fri May 13 14:55:41 2022
 <BR><P>
 <H3>Maximum Stack Usage =        136 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -622,7 +622,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckCommand
 </UL>
 
-<P><STRONG><a name="[b]"></a>SysTick_Handler</STRONG> (Thumb, 340 bytes, Stack size 8 bytes, usart.o(.text))
+<P><STRONG><a name="[b]"></a>SysTick_Handler</STRONG> (Thumb, 348 bytes, Stack size 8 bytes, usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysTick_Handler
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
@@ -647,7 +647,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckCommand
 </UL>
 
-<P><STRONG><a name="[89]"></a>SwitchBlink</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, usart.o(.text))
+<P><STRONG><a name="[89]"></a>SwitchBlink</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, usart.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckCommand
 </UL>
 
@@ -655,7 +655,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MyIntToHex
 </UL>
 
-<P><STRONG><a name="[83]"></a>MyIntToHex</STRONG> (Thumb, 70 bytes, Stack size 28 bytes, usart.o(.text))
+<P><STRONG><a name="[83]"></a>MyIntToHex</STRONG> (Thumb, 72 bytes, Stack size 28 bytes, usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = MyIntToHex &rArr; send_str
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DigitToHex
@@ -664,7 +664,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckCommand
 </UL>
 
-<P><STRONG><a name="[85]"></a>CheckCommand</STRONG> (Thumb, 494 bytes, Stack size 32 bytes, usart.o(.text))
+<P><STRONG><a name="[85]"></a>CheckCommand</STRONG> (Thumb, 504 bytes, Stack size 32 bytes, usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = CheckCommand &rArr; atoi &rArr; strtol &rArr; _strtoul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MyIntToHex
@@ -685,7 +685,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteBuffer
 </UL>
 
-<P><STRONG><a name="[8c]"></a>WriteBuffer</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, usart.o(.text))
+<P><STRONG><a name="[8c]"></a>WriteBuffer</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = WriteBuffer &rArr; CheckCommand &rArr; atoi &rArr; strtol &rArr; _strtoul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBuffet
