@@ -1,0 +1,255 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+Z:\3_course\4931101_90102\Titiov\CUIMP\Cursach_5\lab2.uvproj
+Project File Date:  04/05/2022
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(38): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(40): warning:  #223-D: function "GPIO_SwitchBits" declared implicitly
+Main\Main.c(41): error:  #65: expected a ";"
+compiling init.c...
+Main\init.c(30): warning:  #223-D: function "RNG_Cmd" declared implicitly
+Main\init.c(34): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(38): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(40): warning:  #223-D: function "GPIO_SwitchBits" declared implicitly
+linking...
+lab2.axf: Error: L6218E: Undefined symbol GPIO_SwitchBits (referred from main.o).
+Target not created
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(38): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3712 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 2 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(38): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3712 RO-data=424 RW-data=48 ZI-data=1632  
+"lab2.axf" - 0 Error(s), 2 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(51): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(72): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Main.c(123): warning:  #223-D: function "UpdateButton" declared implicitly
+linking...
+lab2.axf: Error: L6218E: Undefined symbol UpdateButton (referred from main.o).
+Target not created
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(51): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(72): warning:  #186-D: pointless comparison of unsigned integer with zero
+linking...
+Program Size: Code=3612 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 4 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(51): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(73): warning:  #186-D: pointless comparison of unsigned integer with zero
+linking...
+Program Size: Code=3624 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=3624 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 0 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(51): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(72): warning:  #186-D: pointless comparison of unsigned integer with zero
+linking...
+Program Size: Code=3608 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 4 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(51): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(76): warning:  #186-D: pointless comparison of unsigned integer with zero
+linking...
+Program Size: Code=3632 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 4 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(51): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(76): warning:  #186-D: pointless comparison of unsigned integer with zero
+linking...
+Program Size: Code=3632 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 4 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(53): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+Main\Main.c(78): warning:  #186-D: pointless comparison of unsigned integer with zero
+linking...
+Program Size: Code=3632 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 3 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(69): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3612 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 3 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(69): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3612 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 3 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(69): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3612 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 4 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(69): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3612 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 4 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(22): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(69): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3608 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 5 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(22): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(69): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3608 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 5 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(69): warning:  #186-D: pointless comparison of unsigned integer with zero
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3608 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 4 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3608 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 3 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Main.c...
+Main\init.h(3): warning:  #1-D: last line of file ends without a newline
+Main\Main.c(23): warning:  #69-D: integer conversion resulted in truncation
+Main\Main.c(76): warning:  #223-D: function "RNG_GetRandomNumber" declared implicitly
+linking...
+Program Size: Code=3608 RO-data=424 RW-data=52 ZI-data=1636  
+"lab2.axf" - 0 Error(s), 3 Warning(s).
+Load "Z:\\3_course\\4931101_90102\\Titiov\\CUIMP\\Cursach_5\\lab2.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
