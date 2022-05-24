@@ -1,0 +1,381 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Student\Downloads\RNG\LAÂ_5\1\lab_1.uvproj
+Project File Date:  05/19/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling startup_stm32f40_41xxx.s...
+compiling main.c...
+User\main.h(7): error:  #20: identifier "uint32_t" is undefined
+User\ini.h(7): warning:  #1-D: last line of file ends without a newline
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+compiling ini.c...
+User\ini.h(7): warning:  #1-D: last line of file ends without a newline
+compiling system_stm32f4xx.c...
+compiling misc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_cec.c...
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_cryp.c...
+compiling stm32f4xx_cryp_aes.c...
+compiling stm32f4xx_cryp_des.c...
+compiling stm32f4xx_cryp_tdes.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_dbgmcu.c...
+compiling stm32f4xx_dcmi.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_dma2d.c...
+compiling stm32f4xx_dsi.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_flash_ramfunc.c...
+compiling stm32f4xx_fmpi2c.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_hash.c...
+compiling stm32f4xx_hash_md5.c...
+compiling stm32f4xx_hash_sha1.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_iwdg.c...
+compiling stm32f4xx_lptim.c...
+compiling stm32f4xx_ltdc.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_qspi.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_rng.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_sai.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_spdifrx.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_wwdg.c...
+Target not created
+compiling main.c...
+User\main.h(7): error:  #20: identifier "uint32_t" is undefined
+User\ini.h(7): warning:  #1-D: last line of file ends without a newline
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+User\main.c(8): error:  #77-D: this declaration has no storage class or type specifier
+User\main.c(91): error:  #20: identifier "max_num" is undefined
+User\main.c - 4 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+User\main.h(7): error:  #20: identifier "uint32_t" is undefined
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+User\main.c(8): error:  #77-D: this declaration has no storage class or type specifier
+User\main.c(91): error:  #20: identifier "max_num" is undefined
+compiling ini.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.h(7): error:  #20: identifier "uint32_t" is undefined
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+compiling ini.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+compiling ini.c...
+User\ini.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+User\ini.c(6): error:  #20: identifier "USART_InitTypeDef" is undefined
+User\ini.c(8): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+User\ini.c(8): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+User\ini.c(8): error:  #20: identifier "ENABLE" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_2" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_3" is undefined
+User\ini.c(12): error:  #20: identifier "GPIO_Mode_AF" is undefined
+User\ini.c(13): error:  #20: identifier "GPIO_Low_Speed" is undefined
+User\ini.c(14): error:  #20: identifier "GPIO_OType_PP" is undefined
+User\ini.c(15): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+User\ini.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+User\ini.c(17): error:  #20: identifier "GPIOA" is undefined
+User\ini.c(19): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+User\ini.c(19): error:  #20: identifier "GPIO_PinSource2" is undefined
+User\ini.c(19): error:  #20: identifier "GPIO_AF_USART2" is undefined
+User\ini.c(20): error:  #20: identifier "GPIO_PinSource3" is undefined
+User\ini.c(23): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+User\ini.c(23): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+User\ini.c(26): error:  #20: identifier "USART_WordLength_8b" is undefined
+User\ini.c(27): error:  #20: identifier "USART_StopBits_1" is undefined
+User\ini.c(28): error:  #20: identifier "USART_Parity_No" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Rx" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Tx" is undefined
+User\ini.c(30): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+User\ini.c(32): warning:  #223-D: function "USART_Init" declared implicitly
+User\ini.c(32): error:  #20: identifier "USART2" is undefined
+User\ini.c(34): warning:  #223-D: function "USART_Cmd" declared implicitly
+User\ini.c(36): warning:  #223-D: function "NVIC_EnableIRQ" declared implicitly
+User\ini.c(36): error:  #20: identifier "USART2_IRQn" is undefined
+User\ini.c(38): warning:  #223-D: function "USART_ITConfig" declared implicitly
+User\ini.c(38): error:  #20: identifier "USART_IT_RXNE" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+compiling ini.c...
+User\ini.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+User\ini.c(6): error:  #20: identifier "USART_InitTypeDef" is undefined
+User\ini.c(8): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+User\ini.c(8): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+User\ini.c(8): error:  #20: identifier "ENABLE" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_2" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_3" is undefined
+User\ini.c(12): error:  #20: identifier "GPIO_Mode_AF" is undefined
+User\ini.c(13): error:  #20: identifier "GPIO_Low_Speed" is undefined
+User\ini.c(14): error:  #20: identifier "GPIO_OType_PP" is undefined
+User\ini.c(15): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+User\ini.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+User\ini.c(17): error:  #20: identifier "GPIOA" is undefined
+User\ini.c(19): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+User\ini.c(19): error:  #20: identifier "GPIO_PinSource2" is undefined
+User\ini.c(19): error:  #20: identifier "GPIO_AF_USART2" is undefined
+User\ini.c(20): error:  #20: identifier "GPIO_PinSource3" is undefined
+User\ini.c(23): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+User\ini.c(23): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+User\ini.c(26): error:  #20: identifier "USART_WordLength_8b" is undefined
+User\ini.c(27): error:  #20: identifier "USART_StopBits_1" is undefined
+User\ini.c(28): error:  #20: identifier "USART_Parity_No" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Rx" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Tx" is undefined
+User\ini.c(30): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+User\ini.c(32): warning:  #223-D: function "USART_Init" declared implicitly
+User\ini.c(32): error:  #20: identifier "USART2" is undefined
+User\ini.c(34): warning:  #223-D: function "USART_Cmd" declared implicitly
+User\ini.c(36): warning:  #223-D: function "NVIC_EnableIRQ" declared implicitly
+User\ini.c(36): error:  #20: identifier "USART2_IRQn" is undefined
+User\ini.c(38): warning:  #223-D: function "USART_ITConfig" declared implicitly
+User\ini.c(38): error:  #20: identifier "USART_IT_RXNE" is undefined
+Target not created
+compiling ini.c...
+User\ini.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+User\ini.c(6): error:  #20: identifier "USART_InitTypeDef" is undefined
+User\ini.c(8): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+User\ini.c(8): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+User\ini.c(8): error:  #20: identifier "ENABLE" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_2" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_3" is undefined
+User\ini.c(12): error:  #20: identifier "GPIO_Mode_AF" is undefined
+User\ini.c(13): error:  #20: identifier "GPIO_Low_Speed" is undefined
+User\ini.c(14): error:  #20: identifier "GPIO_OType_PP" is undefined
+User\ini.c(15): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+User\ini.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+User\ini.c(17): error:  #20: identifier "GPIOA" is undefined
+User\ini.c(19): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+User\ini.c(19): error:  #20: identifier "GPIO_PinSource2" is undefined
+User\ini.c(19): error:  #20: identifier "GPIO_AF_USART2" is undefined
+User\ini.c(20): error:  #20: identifier "GPIO_PinSource3" is undefined
+User\ini.c(23): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+User\ini.c(23): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+User\ini.c(26): error:  #20: identifier "USART_WordLength_8b" is undefined
+User\ini.c(27): error:  #20: identifier "USART_StopBits_1" is undefined
+User\ini.c(28): error:  #20: identifier "USART_Parity_No" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Rx" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Tx" is undefined
+User\ini.c(30): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+User\ini.c(32): warning:  #223-D: function "USART_Init" declared implicitly
+User\ini.c(32): error:  #20: identifier "USART2" is undefined
+User\ini.c(34): warning:  #223-D: function "USART_Cmd" declared implicitly
+User\ini.c(36): warning:  #223-D: function "NVIC_EnableIRQ" declared implicitly
+User\ini.c(36): error:  #20: identifier "USART2_IRQn" is undefined
+User\ini.c(38): warning:  #223-D: function "USART_ITConfig" declared implicitly
+User\ini.c(38): error:  #20: identifier "USART_IT_RXNE" is undefined
+User\ini.c - 24 Error(s), 8 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+compiling ini.c...
+User\ini.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+User\ini.c(6): error:  #20: identifier "USART_InitTypeDef" is undefined
+User\ini.c(8): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+User\ini.c(8): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+User\ini.c(8): error:  #20: identifier "ENABLE" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_2" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_3" is undefined
+User\ini.c(12): error:  #20: identifier "GPIO_Mode_AF" is undefined
+User\ini.c(13): error:  #20: identifier "GPIO_Low_Speed" is undefined
+User\ini.c(14): error:  #20: identifier "GPIO_OType_PP" is undefined
+User\ini.c(15): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+User\ini.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+User\ini.c(17): error:  #20: identifier "GPIOA" is undefined
+User\ini.c(19): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+User\ini.c(19): error:  #20: identifier "GPIO_PinSource2" is undefined
+User\ini.c(19): error:  #20: identifier "GPIO_AF_USART2" is undefined
+User\ini.c(20): error:  #20: identifier "GPIO_PinSource3" is undefined
+User\ini.c(23): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+User\ini.c(23): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+User\ini.c(26): error:  #20: identifier "USART_WordLength_8b" is undefined
+User\ini.c(27): error:  #20: identifier "USART_StopBits_1" is undefined
+User\ini.c(28): error:  #20: identifier "USART_Parity_No" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Rx" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Tx" is undefined
+User\ini.c(30): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+User\ini.c(32): warning:  #223-D: function "USART_Init" declared implicitly
+User\ini.c(32): error:  #20: identifier "USART2" is undefined
+User\ini.c(34): warning:  #223-D: function "USART_Cmd" declared implicitly
+User\ini.c(36): warning:  #223-D: function "NVIC_EnableIRQ" declared implicitly
+User\ini.c(36): error:  #20: identifier "USART2_IRQn" is undefined
+User\ini.c(38): warning:  #223-D: function "USART_ITConfig" declared implicitly
+User\ini.c(38): error:  #20: identifier "USART_IT_RXNE" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+compiling ini.c...
+User\ini.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+User\ini.c(6): error:  #20: identifier "USART_InitTypeDef" is undefined
+User\ini.c(8): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+User\ini.c(8): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+User\ini.c(8): error:  #20: identifier "ENABLE" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_2" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_3" is undefined
+User\ini.c(12): error:  #20: identifier "GPIO_Mode_AF" is undefined
+User\ini.c(13): error:  #20: identifier "GPIO_Low_Speed" is undefined
+User\ini.c(14): error:  #20: identifier "GPIO_OType_PP" is undefined
+User\ini.c(15): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+User\ini.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+User\ini.c(17): error:  #20: identifier "GPIOA" is undefined
+User\ini.c(19): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+User\ini.c(19): error:  #20: identifier "GPIO_PinSource2" is undefined
+User\ini.c(19): error:  #20: identifier "GPIO_AF_USART2" is undefined
+User\ini.c(20): error:  #20: identifier "GPIO_PinSource3" is undefined
+User\ini.c(23): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+User\ini.c(23): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+User\ini.c(26): error:  #20: identifier "USART_WordLength_8b" is undefined
+User\ini.c(27): error:  #20: identifier "USART_StopBits_1" is undefined
+User\ini.c(28): error:  #20: identifier "USART_Parity_No" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Rx" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Tx" is undefined
+User\ini.c(30): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+User\ini.c(32): warning:  #223-D: function "USART_Init" declared implicitly
+User\ini.c(32): error:  #20: identifier "USART2" is undefined
+User\ini.c(34): warning:  #223-D: function "USART_Cmd" declared implicitly
+User\ini.c(36): warning:  #223-D: function "NVIC_EnableIRQ" declared implicitly
+User\ini.c(36): error:  #20: identifier "USART2_IRQn" is undefined
+User\ini.c(38): warning:  #223-D: function "USART_ITConfig" declared implicitly
+User\ini.c(38): error:  #20: identifier "USART_IT_RXNE" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+User\main.c(55): warning:  #223-D: function "USART_ini" declared implicitly
+compiling ini.c...
+User\ini.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+User\ini.c(6): error:  #20: identifier "USART_InitTypeDef" is undefined
+User\ini.c(8): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+User\ini.c(8): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+User\ini.c(8): error:  #20: identifier "ENABLE" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_2" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_3" is undefined
+User\ini.c(12): error:  #20: identifier "GPIO_Mode_AF" is undefined
+User\ini.c(13): error:  #20: identifier "GPIO_Low_Speed" is undefined
+User\ini.c(14): error:  #20: identifier "GPIO_OType_PP" is undefined
+User\ini.c(15): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+User\ini.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+User\ini.c(17): error:  #20: identifier "GPIOA" is undefined
+User\ini.c(19): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+User\ini.c(19): error:  #20: identifier "GPIO_PinSource2" is undefined
+User\ini.c(19): error:  #20: identifier "GPIO_AF_USART2" is undefined
+User\ini.c(20): error:  #20: identifier "GPIO_PinSource3" is undefined
+User\ini.c(23): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+User\ini.c(23): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+User\ini.c(26): error:  #20: identifier "USART_WordLength_8b" is undefined
+User\ini.c(27): error:  #20: identifier "USART_StopBits_1" is undefined
+User\ini.c(28): error:  #20: identifier "USART_Parity_No" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Rx" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Tx" is undefined
+User\ini.c(30): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+User\ini.c(32): warning:  #223-D: function "USART_Init" declared implicitly
+User\ini.c(32): error:  #20: identifier "USART2" is undefined
+User\ini.c(34): warning:  #223-D: function "USART_Cmd" declared implicitly
+User\ini.c(36): warning:  #223-D: function "NVIC_EnableIRQ" declared implicitly
+User\ini.c(36): error:  #20: identifier "USART2_IRQn" is undefined
+User\ini.c(38): warning:  #223-D: function "USART_ITConfig" declared implicitly
+User\ini.c(38): error:  #20: identifier "USART_IT_RXNE" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+compiling ini.c...
+User\ini.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+User\ini.c(6): error:  #20: identifier "USART_InitTypeDef" is undefined
+User\ini.c(8): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+User\ini.c(8): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+User\ini.c(8): error:  #20: identifier "ENABLE" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_2" is undefined
+User\ini.c(11): error:  #20: identifier "GPIO_Pin_3" is undefined
+User\ini.c(12): error:  #20: identifier "GPIO_Mode_AF" is undefined
+User\ini.c(13): error:  #20: identifier "GPIO_Low_Speed" is undefined
+User\ini.c(14): error:  #20: identifier "GPIO_OType_PP" is undefined
+User\ini.c(15): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+User\ini.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+User\ini.c(17): error:  #20: identifier "GPIOA" is undefined
+User\ini.c(19): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+User\ini.c(19): error:  #20: identifier "GPIO_PinSource2" is undefined
+User\ini.c(19): error:  #20: identifier "GPIO_AF_USART2" is undefined
+User\ini.c(20): error:  #20: identifier "GPIO_PinSource3" is undefined
+User\ini.c(23): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+User\ini.c(23): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+User\ini.c(26): error:  #20: identifier "USART_WordLength_8b" is undefined
+User\ini.c(27): error:  #20: identifier "USART_StopBits_1" is undefined
+User\ini.c(28): error:  #20: identifier "USART_Parity_No" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Rx" is undefined
+User\ini.c(29): error:  #20: identifier "USART_Mode_Tx" is undefined
+User\ini.c(30): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+User\ini.c(32): warning:  #223-D: function "USART_Init" declared implicitly
+User\ini.c(32): error:  #20: identifier "USART2" is undefined
+User\ini.c(34): warning:  #223-D: function "USART_Cmd" declared implicitly
+User\ini.c(36): warning:  #223-D: function "NVIC_EnableIRQ" declared implicitly
+User\ini.c(36): error:  #20: identifier "USART2_IRQn" is undefined
+User\ini.c(38): warning:  #223-D: function "USART_ITConfig" declared implicitly
+User\ini.c(38): error:  #20: identifier "USART_IT_RXNE" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\ini.h(11): warning:  #1-D: last line of file ends without a newline
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+User\main.c(55): warning:  #223-D: function "USART_ini" declared implicitly
+compiling ini.c...
+User\ini.h(11): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\ini.h(11): warning:  #1-D: last line of file ends without a newline
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(4): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+compiling ini.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(5): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(6): error:  #147: declaration is incompatible with "int rand(void)" (declared at line 271 of "C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h")
+Target not created
+Build target 'Target 1'
+compiling main.c...
+User\main.c(90): error:  #137: expression must be a modifiable lvalue
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=5432 RO-data=424 RW-data=64 ZI-data=2656  
+"lab_1.axf" - 0 Error(s), 0 Warning(s).
